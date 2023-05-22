@@ -41,9 +41,44 @@ class _MyHomePageState extends State<MyHomePage> {
 
           title: Text(widget.title),
         ),
-        body: Center(
+      body: Center(
 
 
+  // inkwell
+  child:   InkWell(
+    onTap: (){print("tap");},
+    onDoubleTap: (){print("double tap");},
+    onLongPress: (){print("long tap");},
+    child: Container(
+    width: 200,
+      height: 200,
+      color: Colors.amber,
+
+
+
+
+      // this is for row and column
+      // width:500,
+      // height: 300,
+      // child:   Column(
+      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //     crossAxisAlignment: CrossAxisAlignment.center,
+      //     children: [
+      //
+      //   Text("data"),
+      //   Text("data"),
+      //   Text("data"),
+      //   Text("data"),
+      //   Text("data"),
+      //       ElevatedButton(onPressed: (){}, child: Text(" click"))
+      //
+      // ]),
+
+
+    ),
+  ),
+),
+    );
 
           // container child
 
@@ -73,17 +108,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
         //for image
-          child: Container(
-            // width: 100,
-            height: 100,
-            child: Image.asset(
-              'assets/images/achs.png'
-            ),
-          )
+        //   child: Container(
+        //     // width: 100,
+        //     height: 100,
+        //     child: Image.asset(
+        //       'assets/images/achs.png'
+        //     ),
+        //   )
 
 
 
-        ));
+        // )
 
   }
 }
