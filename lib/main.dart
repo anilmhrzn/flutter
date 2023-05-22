@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -41,84 +42,44 @@ class _MyHomePageState extends State<MyHomePage> {
 
           title: Text(widget.title),
         ),
-      body: Center(
-
-
-  // inkwell
-  child:   InkWell(
-    onTap: (){print("tap");},
-    onDoubleTap: (){print("double tap");},
-    onLongPress: (){print("long tap");},
+body: Center(
     child: Container(
-    width: 200,
-      height: 200,
-      color: Colors.amber,
-
-
-
-
-      // this is for row and column
-      // width:500,
-      // height: 300,
-      // child:   Column(
-      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      //     crossAxisAlignment: CrossAxisAlignment.center,
-      //     children: [
-      //
-      //   Text("data"),
-      //   Text("data"),
-      //   Text("data"),
-      //   Text("data"),
-      //   Text("data"),
-      //       ElevatedButton(onPressed: (){}, child: Text(" click"))
-      //
-      // ]),
-
-
+    width:100,
+    height: 100,
+    color: Color.fromRGBO(2, 2, 2, 0.5),
+    child: InkWell(
+      onTap: (){print("container tapped");},child: Center(
+      child: InkWell(
+        onTap: (){print('tappend on the text');},child: Text("Tap"),
+      ),
     ),
+    ),
+
   ),
 ),
+
+
+
+
+
+// normal inkwell
+// body: Center(
+//   child: Container(
+//     width:100,
+//     height: 100,
+//     color: Color.fromRGBO(2, 2, 2, 0.5),
+//     child: InkWell(
+//       onTap: (){print("container tapped");},
+//     ),
+//
+//   ),
+// ),
+
+
+
     );
 
-          // container child
 
-
-          // child: Container(
-          //     width: 200,
-          //     height: 200,
-          //     color: Colors.deepPurpleAccent,
-          //     child: Center(
-          //         child: Text("hello",
-          //             style: TextStyle(fontSize: 30, color: Colors.amber))
-          //     )),
-
-
-
-          // text button
-
-              //   child:TextButton(onPressed: () { print("you pressed it"); },onLongPress: (){print("long pressed");}, child: Text("hahaha"),),
-
-
-        //  elivated button
-        //   child: ElevatedButton(onPressed: (){print("button pressed");}, child: Text("button"),),
-
-
-          //outline button
-          // child : OutlinedButton(onPressed: (){print("hello outline button pressent");},child: Text("press it"),),
-
-
-        //for image
-        //   child: Container(
-        //     // width: 100,
-        //     height: 100,
-        //     child: Image.asset(
-        //       'assets/images/achs.png'
-        //     ),
-        //   )
-
-
-
-        // )
 
   }
 }
