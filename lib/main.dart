@@ -38,48 +38,140 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-
-          title: Text(widget.title),
-        ),
-body: Center(
-    child: Container(
-    width:100,
-    height: 100,
-    color: Color.fromRGBO(2, 2, 2, 0.5),
-    child: InkWell(
-      onTap: (){print("container tapped");},child: Center(
-      child: InkWell(
-        onTap: (){print('tappend on the text');},child: Text("Tap"),
+      appBar: AppBar(
+        title: Text(widget.title),
       ),
-    ),
-    ),
-
-  ),
-),
-
-
-
-
-
-// normal inkwell
-// body: Center(
-//   child: Container(
-//     width:100,
-//     height: 100,
-//     color: Color.fromRGBO(2, 2, 2, 0.5),
-//     child: InkWell(
-//       onTap: (){print("container tapped");},
-//     ),
-//
-//   ),
-// ),
-
-
-
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.blue,
+                    ), Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.red,
+                    ),Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.green,
+                    ),Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.yellow,
+                    ),Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.blue,
+                    ),Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.black,
+                    ),Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.deepPurple,
+                    ),Container(
+                      // width: 200,
+                      height: 200,
+                      color: Colors.grey,
+                    ),Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.green,
+                    ),Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.yellow,
+                    ),Container(
+                      // width: 200,
+                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
+                      width: 200,
+                      height: 200,
+                      color: Colors.red,
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.red,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.green,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.yellow,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.blue,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.black,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.deepPurple,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.grey,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.green,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.yellow,
+              ),Container(
+                margin: EdgeInsets.only(bottom: 11),
+                // width: 200,
+                height: 200,
+                color: Colors.red,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
-
-
-
   }
 }
