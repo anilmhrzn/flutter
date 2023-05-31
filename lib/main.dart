@@ -37,6 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var alphabetsName =['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -308,267 +310,283 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
     //TODO: EG-2
-      body: ListView(
-        scrollDirection: Axis.vertical,
-        children: [
+    //   body: ListView(
+    //     scrollDirection: Axis.vertical,
+    //     children: [
+    //
+    //       // ListView(
+    //       //   scrollDirection: Axis.horizontal,
+    //       //   children: [
+    //       //     Container(
+    //       //       height: 200,
+    //       //       width: 200,
+    //       //       color: Colors.amber,
+    //       //     )
+    //       //   ],
+    //       // ),
+    //       Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //         child: Text("1"),
+    //         ),
+    //       ),
+    //       Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),Padding(
+    //         padding: const EdgeInsets.all(8.0),
+    //         child: Container(
+    //           height: 50,
+    //           width: 50,
+    //           color: Colors.amber,
+    //           child: Text("1"),
+    //         ),
+    //       ),
+    //     ],
+    //
+    //   ),
 
-          // ListView(
-          //   scrollDirection: Axis.horizontal,
-          //   children: [
-          //     Container(
-          //       height: 200,
-          //       width: 200,
-          //       color: Colors.amber,
-          //     )
-          //   ],
-          // ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-            child: Text("1"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 50,
-              width: 50,
-              color: Colors.amber,
-              child: Text("1"),
-            ),
-          ),
-        ],
 
+    //todo: listview.builder
+      body: ListView.builder(itemBuilder: (context,index){
+
+        return Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(alphabetsName[index],style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 21,
+            color: Colors.red
+
+          ),
+          ),
+        );
+      },itemCount: alphabetsName.length,
+        itemExtent: 100,
       ),
-
-
 
 
 
