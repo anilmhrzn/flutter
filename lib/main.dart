@@ -41,137 +41,542 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.blue,
-                    ), Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.red,
-                    ),Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.green,
-                    ),Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.yellow,
-                    ),Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.blue,
-                    ),Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.black,
-                    ),Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.deepPurple,
-                    ),Container(
-                      // width: 200,
-                      height: 200,
-                      color: Colors.grey,
-                    ),Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.green,
-                    ),Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.yellow,
-                    ),Container(
-                      // width: 200,
-                      margin: EdgeInsets.fromLTRB(0, 0, 11, 11),
-                      width: 200,
-                      height: 200,
-                      color: Colors.red,
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.red,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.green,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.yellow,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.blue,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.black,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.deepPurple,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.grey,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.green,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.yellow,
-              ),Container(
-                margin: EdgeInsets.only(bottom: 11),
-                // width: 200,
-                height: 200,
-                color: Colors.red,
-              ),
-            ],
+
+
+     //TODO: using list view
+    //TODO:EG-1
+     // body: Padding(
+     //   padding: const EdgeInsets.all(16.0),
+     //   child: ListView(
+     //     children: [
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data1"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data2"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data3"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data4"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data5"),
+     //       ),
+     //
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data6"),
+     //       ),
+     //       Padding(
+     //         padding: const EdgeInsets.all(8.0),
+     //         child: Text("data13"),
+     //       ),
+     //     ],
+     //   ),
+     // ),
+
+
+    //TODO: EG-2
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: [
+
+          // ListView(
+          //   scrollDirection: Axis.horizontal,
+          //   children: [
+          //     Container(
+          //       height: 200,
+          //       width: 200,
+          //       color: Colors.amber,
+          //     )
+          //   ],
+          // ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+            child: Text("1"),
+            ),
           ),
-        ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.amber,
+              child: Text("1"),
+            ),
+          ),
+        ],
+
       ),
+
+
+
+
+
+
+
+
+
+
     );
   }
 }
