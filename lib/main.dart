@@ -46,43 +46,45 @@ class _MyHomePageState extends State<MyHomePage> {
     //todo use shape
 
     return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-        ),
-
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            height: 100,
-            width: 100,
-            decoration: BoxDecoration(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Row(
+        children: [
+          Expanded(
+            flex: 2,
+            child: Container(
+              height: 100,
+              width: 25,
               color: Colors.green,
-              // borderRadius:BorderRadius.circular(30),
-                // borderRadius:BorderRadius.only(bottomRight: Radius.circular(20)),
-
-                border: Border.all(
-                color: Colors.red,
-                    width: 2
-              ),
-                boxShadow: [
-                  BoxShadow(
-                    blurRadius: 11,
-                    color: Colors.grey,
-                    spreadRadius: 13
-                  )
-                ],
-              // shape: BoxShape.circle
-
-
-
-            )
-
             ),
-        ),
-        ),
-
-        );
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              height: 100,
+              width: 25,
+              color: Colors.yellow,
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              height: 100,
+              width: 25,
+              color: Colors.blue,
+            ),
+          ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              height: 100,
+              width: 25,
+              color: Colors.black,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
-
