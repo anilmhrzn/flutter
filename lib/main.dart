@@ -44,7 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
     //todo use border
     //todo use boxshadow
     //todo use shape
-    var arrayNames=['anil','abin','maila','asmita','kanika','anil','abin','maila','asmita','kanika'];
 
     return Scaffold(
         appBar: AppBar(
